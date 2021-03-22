@@ -1,0 +1,28 @@
+IYJVCH
+Beke Ambrus
+
+Hát ha jól emlékszem itt az lenne a cél, hogy leírjam milyen tapasztalataim voltak a feladat megoldása közben.
+Hogy őszinte legyek elég sokáig húztam a feladat megcsinálását, de ettől függetlenül egészen izgalmasra sikeredett.
+Alapjraton érdekel ez a dockerizált világ és munkában is sokat használjuk, de még nem volt lelkierőm elmélyedni benne komolyabban.
+
+Szóval elsőkörben végigkörgetve a diákat és pár online tutorial videót végignézve 1,5x-ös sebességen egészt határozottan gy gondoltam hogy sikerülni fog a feladat.
+Gondolván arra, hogy a melóban használt ockeremnek a configját nem kéne eltörni leszedtem egy centos 8 imaget amit VMware-en futtattam.
+beállítgattam magyarra nyelvet meg hasonló apróságok, aztán nekiálltam a dockernek.
+Annak a feltelepítése még gördülékenyen ment.
+Írogattam a docker filet, meg játszottam a python script-el egy kics thogy megértsem, ahhoz gyorsan python3 meg pip3 lehúzva és minden rendben volt.
+Eljutottam odáig a feladatban, hogy docker-compose-t kellene futtatni, na ekkor mondta azt a centos hogy neki ilyenje nincsen.
+Az istennek nem tudtam feltelepíteni a docker-compose-t mert a yum ban alapjáraton nincs benne, importálni a repot nem tudtam szóval varadt a curl, amihez a linkek amiket találtam elég furák voltak ilyen (uname -m) és hasonló dolgokkal. Elsőre nem próbáltam megérteni, gondoltam tudja az ember aki odaírta, h miért ezt kell használni
+DE nyilván nem működött. LEgalább 10 féleképpen próbáltam behúzni de az istennek nem akrt működni.
+Jött a C terv, hogy akkor majd pip3-al lehúzom és akkor minden a helyére kerül.
+A pip se működött.
+Frissült meg más package-eket importált meg telepítetet.
+DE a docker.compose-t nem mert valamiért hanyattvágta magát.
+Végső elkeseredésemben letöröltem mindent.
+A dockert a pip3-at a pythont3 mindent amit felraktam és újra telepítettem úgy ahogy először...
+És így működött...
+Szóval az időm nagyrésze a docker-compose telepítésével telt.
+Onnantól kezdve egészen gördülékenyen mentek a dolgok. Docker hob ot használtam az image pusholására nem lokálisat, így egy kicsit izgalmasabbnak tűnt.
+ezek után pár kissebb hibám volt. Kimaradt kettőspontok a yml-ben, vagy csak 3 space az indentálásnál, vagy egy mappával elcsúszott az nginx, de ezek egészen hamar orvosolhatóak voltak.
+Sok óra szenvedés után majdnem a könnyem kijött amikor az a kis cuki tehén elkezdett magyarázni a watch parancsra.
+Nagy küzdelem volt, de megrte. Sokat tanultam a linuxról, meg a dockerről és összességében egy egész jó kis házi feladat volt.
+Kicsit sajnálom, h nem álltam neki korábban.

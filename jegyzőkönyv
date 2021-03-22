@@ -1,0 +1,14 @@
+IYJVCH
+Beke Ambrus
+
+Hát ha jól emlékszem itt az lenne a cél, hogy leírjam milyen tapasztalataim voltak a feladat megoldása közben.
+Hogy őszinte legyek elég sokáig húztam a feladat megcsinálását, de ettől függetlenül egészen izgalmasra sikeredett.
+Alapjraton érdekel ez a dockerizált világ és munkában is sokat használjuk, de még nem volt lelkierőm elmélyedni benne komolyabban.
+
+Szóval elsőkörben végigkörgetve a diákat és pár online tutorial videót végignézve 1,5x-ös sebességen egészt határozottan gy gondoltam hogy sikerülni fog a feladat.
+Gondolván arra, hogy a melóban használt ockeremnek a configját nem kéne eltörni leszedtem egy centos 8 imaget amit VMware-en futtattam.
+beállítgattam magyarra nyelvet meg hasonló apróságok, aztán nekiálltam a dockernek.
+Annak a feltelepítése még gördülékenyen ment.
+Írogattam a docker filet, meg játszottam a python script-el egy kics thogy megértsem, ahhoz gyorsan python3 meg pip3 lehúzva és minden rendben volt.
+Eljutottam odáig a feladatban, hogy docker-compose-t kellene futtatni, na ekkor mondta azt a centos hogy neki ilyenje nincsen.
+Az istennek nem tudtam feltelepíteni a docker-compose-t mert a yum ban alapjáraton nincs benne, importálni a repot nem tudtam szóval varadt a curl, amihez a linkek amiket találtam elég furák voltak ilyen (user -m)
