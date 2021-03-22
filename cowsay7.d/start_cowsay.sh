@@ -18,7 +18,8 @@ function leave_some_space {
 	echo
 	echo
 }
-# Wait for the file to be copied in the right locationwhile [[ ! -f $FNAME && "$count" -lt "$timeout" ]];
+# Wait for the file to be copied in the right location
+while [[ ! -f $FNAME && "$count" -lt "$timeout" ]];
 do
 	cowsay $WAITFILE_SENTENCE
 	sleep $SLEEP
