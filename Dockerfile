@@ -10,6 +10,6 @@ ADD cowsay7.d/sentences.log /root/sentences.log
 ENV WAITFILE_SENTENCE="I don't know what to say..."
 ENV BAILOUT_SENTENCE="Too late. See you next time!"
 ENV FNAME="/root/sentences.log"
-ENV SLEEP="10"
+ENV SLEEP="1"
 
 CMD ["/bin/bash", "/root/start_cowsay.sh"]

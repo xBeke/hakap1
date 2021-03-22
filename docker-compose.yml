@@ -1,4 +1,4 @@
-version "3.4"
+version: "3.4"
 
 volumes:
     web_data:
@@ -7,7 +7,7 @@ services:
     app:
         image: nginx:alpine
         ports:
-            -7788:80
+            - 7788:80
         volumes:
             - web_data:/usr/share/nginx:ro
   
