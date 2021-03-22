@@ -9,7 +9,7 @@ services:
         ports:
             - 7788:80
         volumes:
-            - web_data:/usr/share/nginx:ro
+            - web_data:/usr/share/nginx/html:ro
   
     cow:
         image: bambeeh/hakap1:latest
